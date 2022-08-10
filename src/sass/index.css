@@ -1,0 +1,89 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.root {
+  --section-background-color: #F5F5F5;
+  --header-background-color: #FEFEFE;
+  --yellow-color: #FFE550;
+  --accent-green-color: #BBF330;
+  --accent-dark-green: #7EB101;
+  --primary-text-color: #2C2C2C;
+  --secondary-text-color: #000000;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1280px;
+  }
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}/*# sourceMappingURL=index.css.map */
