@@ -67,7 +67,27 @@
     border: 11px solid var(--yellow-color);
     border-radius: 50%;
 
+    &:hover,
+    &:focus {
+        border: 11px solid #BBF330;
+    }
+
     @media screen and (min-width: $tablet) {
         border: 14px solid var(--yellow-color);
+
+        &:hover,
+        &:focus {
+        border: 14px solid #BBF330;
+    }
+    }
+
+    @media screen and (min-width: $desktop) {
+        border: 16px solid var(--yellow-color);
+
+        &:hover,
+        &:focus {
+        border: 16px solid #BBF330;
+    }
+
     }
 }
