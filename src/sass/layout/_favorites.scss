@@ -66,6 +66,7 @@
     padding: 28px 29px;
     border: 11px solid var(--yellow-color);
     border-radius: 50%;
+    transition: all 0.2s ease-out;
 
     &:hover,
     &:focus {
