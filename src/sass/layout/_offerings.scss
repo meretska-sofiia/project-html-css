@@ -126,11 +126,13 @@
     font-size: 14px;
     line-height: 1.5;
     @extend %secondary-button;
+    outline: transparent;
     border-radius: 30px;
     transition: all 0.2s ease-out;
 
     &:hover,
     &:focus {
+        outline: transparent;
         border: 2px solid #597D00;
     }
 }
