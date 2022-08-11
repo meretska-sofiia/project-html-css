@@ -1,0 +1,11 @@
+.button {
+    max-width: 102px;
+    height: 42px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.49em;
+    border-radius: 30px;
+    color: var(--primary-text-color);
+    @extend %display-flex;
+    cursor: pointer;
+}
