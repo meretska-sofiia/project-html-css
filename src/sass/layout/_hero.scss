@@ -1,9 +1,9 @@
 .hero {
   padding-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 0;
   @media screen and (min-width: $desktop) {
     padding-top: 14px;
-    padding-bottom: 0;
+
   }
 }
 
@@ -13,12 +13,15 @@
   }
   @media screen and (min-width: $desktop) {
     max-width: 500px;
+    padding-top: 160px;
   }
 }
 
 .hero__container {
     --picture-box-width: 320px;
   display: flex;
+  position: relative;
+
   @media screen and (min-width: $desktop) {
     justify-content: space-between;
     align-items: center;
@@ -26,7 +29,8 @@
 }
 
 .hero__picture-box {
-  position: relative;
+  position: absolute;
+  
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -44,6 +48,8 @@
     margin-left: auto;
     margin-top: 90px;
     padding: 14px;
+    right: 15px;
+        top: 0;
   }
   @media screen and (min-width: $desktop) {
     width: 580px;
@@ -51,6 +57,8 @@
     margin-left: 0;
     margin-top: 0;
     padding: 26px;
+    right: 15px;
+        top: 0;
   }
 }
 
@@ -113,6 +121,10 @@
   &:focus{
     outline: transparent;
     background-color: #B5FF00;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    position: absolute;
   }
 }
 
