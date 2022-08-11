@@ -1,26 +1,30 @@
 .subscribe__form {
-    max-width: 279px;
     display: flex;
     flex-direction: column;
     
     @media screen and (min-width: $tablet) {
-        max-width: 394px;
         flex-direction: row;
         margin-bottom: 0;
+        justify-content: start;
     }
 }
 
 .subscribe-label {
-    width: 100%;
     position: relative;
     margin-bottom: 20px;
+    width: 100%;
+   
+    
 
     @media screen and (min-width: $tablet) {
         margin-right: 18px;
+        min-width: 394px;
+        max-width: 394px;
     }
 
     @media screen and (min-width: $desktop) {
         margin-right: 32px;
+        max-width: 394px;
     }
 }
 

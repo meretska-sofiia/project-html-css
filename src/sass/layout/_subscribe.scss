@@ -40,11 +40,14 @@
     @extend %primary-button;
     height: 42px;
     border: none;
-    margin-left: auto;
+    
     transition: var(--transition-time-func);
     &:hover,
     &:focus{
         background-color: #B5FF00;
+    }
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
     }
 }
 .banan-png {
