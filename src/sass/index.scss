@@ -1,13 +1,16 @@
 @import './base/var';
+@import './base/functions';
 @import './base/common';
 
 @import './base/mixin';
 @import './base/placeholder';
 @import './base/container';
 @import './base/section';
+@import './base/visually-hidden';
 
 @import './components/logo';
 @import './components/mobile-menu';
+@import './components/form';
 @import './components/button';
 @import './components/section-title';
 @import './components/navigation';
