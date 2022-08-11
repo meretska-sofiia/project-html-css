@@ -1,5 +1,5 @@
 .section-offerings {
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 60px;
     background-size: cover;
     background-image: url('../images/offerings/mobile/rectangle.png');
@@ -11,7 +11,7 @@
         }
     
     @media screen and (min-width: $tablet) {
-        padding-top: 187px;
+        padding-top: 147px;
         padding-bottom: 110px;
         background-image: url('../images/offerings/tablet/rectangle.png');
         
@@ -23,7 +23,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        padding-top: 230px;
+        padding-top: 217px;
         padding-bottom: 76px;
         background-image: url('../images/offerings/desktop/rectangle.png');
         @media (min-device-pixel-ratio: 2),
@@ -48,6 +48,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+    }
+        
 }
 
 .offerings__title {
