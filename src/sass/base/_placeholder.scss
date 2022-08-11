@@ -5,41 +5,15 @@
 }
 
 %primary-button {
-    width: 100px;
-    height: 32px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.49em;
-    border-radius: 30px;
-    color: var(--primary-text-color);
     background-color: var(--accent-green-color);
-    @extend %display-flex;
-    cursor: pointer;
 }
 
 %secondary-button {
-    width: 106px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.49em;
-    border-radius: 30px;
     background-color: var(--header-background-color);
     border: 2px solid var(--accent-dark-green);
-    color: var(--primary-text-color);
-    @extend %display-flex;
-    cursor: pointer;
 }
 
 %subscribe-button {
-    width: 102px;
-    height: 42px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.49em;
-    border-radius: 30px;
     background-color: #FFFFFF;
     border: 0.854167px solid var(--accent-dark-green);
-    @extend %display-flex;
-    cursor: pointer;
 }
