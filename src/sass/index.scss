@@ -1,9 +1,11 @@
 @import './base/common';
 @import './base/var';
+@import './base/functions';
 @import './base/mixin';
 @import './base/placeholder';
 @import './base/container';
 @import './base/section';
+@import './base/visually-hidden';
 
 @import './components/logo';
 @import './components/mobile-menu';
