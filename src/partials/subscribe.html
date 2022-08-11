@@ -9,71 +9,80 @@
         varius enim in eros elementum tristique.
       </p>
       <form class="subscribe__form">
-        <label class="visually-hidden" for="subscribe-email"
-          >Enter your e-mail to subscribe</label
-        >
-        <input
-          class="subscribe__input"
-          type="email"
-          name="email"
-          id="subscribe-email"
-          placeholder="Enter your email"
-          required
-        />
+        <label class="subscribe-label" for="subscribe-email">
+          <input
+            class="subscribe__input"
+            type="email"
+            name="email"
+            id="subscribe-email"
+            placeholder="Enter your email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <div class="label__error">
+            <svg class="error-icon">
+              <use href="./images/sprite-icons.svg#error-icon"></use>
+            </svg>
+            <span class="error-message">
+              Not a valid email address (example@email.com)
+            </span>
+          </div>
+        </label>
+
         <button class="button subscribe--button" type="submit">Sign Up</button>
       </form>
+      <picture>
+        <source
+          srcset="
+            ./images/subscribe-images/banan-desktop.webp    1x,
+            ./images/subscribe-images/banan-desktop@2x.webp 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/subscribe-images/banan-desktop.png    1x,
+            ./images/subscribe-images/banan-desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/subscribe-images/banan-tablet.webp    1x,
+            ./images/subscribe-images/banan-tablet@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/subscribe-images/banan-tablet.png    1x,
+            ./images/subscribe-images/banan-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/subscribe-images/banan-mobile.webp    1x,
+            ./images/subscribe-images/banan-mobile@2x.webp 2x
+          "
+          media="(min-width: 320px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/subscribe-images/banan-mobile.png    1x,
+            ./images/subscribe-images/banan-mobile@2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="banan-png"
+          src="./images/subscribe-images/banan-mobile.png"
+          alt="Fresh sweet banana"
+        />
+      </picture>
     </div>
-    <picture>
-      <source
-        srcset="
-          ./images/subscribe-images/banan-desktop.webp    1x,
-          ./images/subscribe-images/banan-desktop@2x.webp 2x
-        "
-        media="(min-width: 1280px)"
-        type="image/webp"
-      />
-      <source
-        srcset="
-          ./images/subscribe-images/banan-desktop.png    1x,
-          ./images/subscribe-images/banan-desktop@2x.png 2x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ./images/subscribe-images/banan-tablet.webp    1x,
-          ./images/subscribe-images/banan-tablet@2x.webp 2x
-        "
-        media="(min-width: 768px)"
-        type="image/webp"
-      />
-      <source
-        srcset="
-          ./images/subscribe-images/banan-tablet.png    1x,
-          ./images/subscribe-images/banan-tablet@2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/subscribe-images/banan-mobile.webp    1x,
-          ./images/subscribe-images/banan-mobile@2x.webp 2x
-        "
-        media="(min-width: 320px)"
-        type="image/webp"
-      />
-      <source
-        srcset="
-          ./images/subscribe-images/banan-mobile.png    1x,
-          ./images/subscribe-images/banan-mobile@2x.png 2x
-        "
-        media="(min-width: 320px)"
-      />
-      <img
-        class="banan-png"
-        src="./images/subscribe-images/banan-mobile.png"
-        alt="Fresh sweet banana"
-      />
-    </picture>
   </div>
 </section>
