@@ -18,7 +18,7 @@
     background-position: center;
   }
 
-  .reviews__item {
+  .reviews__item:not(:last-child) {
     margin-bottom: 24px;
     background: #fefefe;
     border-radius: 0px 30px 30px 30px;
@@ -42,9 +42,7 @@
     text-align: start;
     margin-bottom: 28px;
   }
-  .reviews__star {
-    fill: #ffe550;
-  }
+
   .reviews__comment {
     margin-bottom: 46.35px;
 
@@ -92,6 +90,9 @@
   .reviews__text {
     line-height: 1.18;
     margin-bottom: 32px;
+  }
+  .reviews__star {
+    fill: #ffe550;
   }
   .reviews__comment {
     font-size: 18px;
