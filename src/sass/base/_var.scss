@@ -10,4 +10,6 @@ $desktop: 1280px;
   --accent-dark-green: #7eb101;
   --primary-text-color: #2c2c2c;
   --secondary-text-color: #000000;
+  --error-color: #FF705D;
+  --transition-time-func: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

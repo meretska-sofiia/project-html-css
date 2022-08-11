@@ -1,0 +1,86 @@
+.subscribe__form {
+    max-width: 279px;
+    display: flex;
+    flex-direction: column;
+    
+    @media screen and (min-width: $tablet) {
+        max-width: 394px;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
+.subscribe-label {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 18px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 32px;
+    }
+}
+
+.subscribe__input {
+    width: 100%;
+    padding: 8px;
+    outline: transparent;
+    background-color: #ffffff;
+    border: 0.854167px solid var(--yellow-color);
+    border-radius: 30px;
+    transition: var(--transition-time-func);
+
+    &::placeholder {
+        width: 100%;
+        @include font(12px, 400, 18px);
+        color: var(--primary-text-color);
+        padding: 12px 11px;
+        border: none;
+    }
+
+    &:not(:placeholder-shown):invalid {
+        border-color: var(--error-color);
+
+        +.label__error {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &:not(:placeholder-shown):required:valid {
+        border-color: var(--accent-dark-green);
+    }
+}
+
+.label__error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 6px 23px;
+    justify-content: center;
+    color: var(--error-color);
+    background-color: var(--header-background-color);
+    outline: 1px solid var(--error-color);
+    border-radius: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-time-func);
+}
+
+.error-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    stroke-width: 0;
+    fill: currentColor;
+}
+
+.error-message {
+    @include font(10px, 400, 15px)
+}
