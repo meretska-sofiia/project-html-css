@@ -102,22 +102,33 @@
     }
 }
 
-.offerings__icon {
-    display: flex;
+.offerings__item::before {
+    display: block;
+    content: "";
     width: 48px;
     height: 48px;
-
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
-
-    fill: var(--accent-dark-green);
-    background-color: #FFFFFF;
     border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFFFFF;
+
+}
+
+.offerings__item--rocket::before {
+    background-image: url('../images/offerings/rocket.svg');
+            
+
+}
+
+.offerings__item--touch::before {
+    background-image: url('../images/offerings/touch.svg');
 }
 
 .offerings__subtitle {
+    position: relative;
     margin-bottom: 16px;
+    padding-top: 8px;
 
     font-size: 18px;
     line-height: 1.17;
@@ -133,6 +144,7 @@
     outline: transparent;
     border-radius: 30px;
     transition: all 0.2s ease-out;
+    cursor: pointer;
 
     &:hover,
     &:focus {
