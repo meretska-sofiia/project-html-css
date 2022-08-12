@@ -1,16 +1,18 @@
 <section class="hero">
   <div class="container hero__container">
     <div class="hero__content-box">
-      <h1 class="section-title">Enjoy Your Favorite Food From Anywhere</h1>
-      <p>
+      <h1 class="section-title hero__title">
+        Enjoy Your Favorite Food From Anywhere
+      </h1>
+      <p class="hero__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
-      <button type="button">Order Now</button>
+      <button type="button" class="button hero__button">Order Now</button>
     </div>
     <div class="hero__picture-box">
-      <picture>
+      <picture class="hero__image">
         <source
           srcset="
             ./images/hero/hero-img1-desktop.webp    1x,
@@ -42,14 +44,9 @@
           media="(min-width: 768px)"
         />
 
-        <img
-          src="./images/hero/hero-img1-desktop.png"
-          alt="meatballs"
-          width="528"
-          height="528"
-        />
+        <img src="./images/hero/hero-img1-desktop.png" alt="meatballs" />
       </picture>
-      <picture>
+      <picture class="hero__image">
         <source
           srcset="
             ./images/hero/hero-img2-desktop.webp    1x,
@@ -81,14 +78,9 @@
           media="(min-width: 768px)"
         />
 
-        <img
-          src="./images/hero/hero-img2-desktop.png"
-          alt="meatballs"
-          width="528"
-          height="528"
-        />
+        <img src="./images/hero/hero-img2-desktop.png" alt="meatballs" />
       </picture>
-      <picture>
+      <picture class="hero__image">
         <source
           srcset="
             ./images/hero/hero-img3-desktop.webp    1x,
@@ -120,13 +112,18 @@
           media="(min-width: 768px)"
         />
 
-        <img
-          src="./images/hero/hero-img3-desktop.png"
-          alt="meatballs"
-          width="528"
-          height="528"
-        />
+        <img src="./images/hero/hero-img3-desktop.png" alt="meatballs" />
       </picture>
+      <button type="button" class="hero__button-left">
+        <svg class="hero__icon-left" width="48" height="40">
+          <use href="./images/sprite-icons.svg#left-arrow-gallery"></use>
+        </svg>
+      </button>
+      <button type="button" class="hero__button-right">
+        <svg class="hero__icon-right" width="48" height="40">
+          <use href="./images/sprite-icons.svg#right-arrow-gallery"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
