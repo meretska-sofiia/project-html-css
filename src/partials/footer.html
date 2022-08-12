@@ -1,5 +1,5 @@
 <footer>
-  <div class="container footer">
+  <div class="container footer section">
     <div class="footer__desktop">
     <nav class="navigation">
       <a href="#" class="logo footer__logo">
@@ -26,11 +26,34 @@
       </ul>
     </nav>
 
-    <form class="subscribe-modal">
-      <span class="footer__subscribe-title">Subscribe</span>
-      <div class="footer__tablet-subscribe">
-      <div class="label-borders footer__label-borders">
-        <label>
+    <form class="subscribe__form">
+        <label class="subscribe-label" for="subscribe-email">
+          <input
+            class="subscribe__input"
+            type="email"
+            name="email"
+            id="subscribe-email"
+            placeholder="Enter your email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <div class="label__error">
+            <svg class="error-icon">
+              <use href="./images/sprite-icons.svg#error-icon"></use>
+            </svg>
+            <span class="error-message">
+              Not a valid email address (example@email.com)
+            </span>
+          </div>
+        </label>
+
+        <button class="button subscribe--button" type="submit">Sign Up</button>
+      </form>
+    <!-- <form class="subscribe__form">
+      
+      <div class="footer__subscribe-container">
+        <label class="footer__subscribe-form">
+          <span class="footer__subscribe-title">Subscribe</span>
           <input
             class="subscribe-email"
             type="email"
@@ -38,19 +61,15 @@
             placeholder="Enter your email"
           />
         </label>
-      </div>
-      <div class="footer__mob-button footer__tablet-button footer__button">
       <button type="submit" class="button footer__subscribe">Subscribe</button>
       </div>
-      </div>
-      <div class="footer__terms">
-      <p class="privacy-policy">
+    </form> -->
+    </div>
+
+    <p class="privacy-policy">
         By subscribing you agree to with our
         <a class="privacy-policy__link" href="#">Privacy Policy</a>
       </p>
-      </div>
-    </form>
-    </div>
 
     <div class="footer__policies">
     <div class="policies">

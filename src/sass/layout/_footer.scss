@@ -1,28 +1,19 @@
 .footer {
-  height: 619px;
   background-color: var(--header-background-color);
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
-  background-image: url('/src/images/footer/mob-apple.jpg'),
-    url('/src/images/footer/mob-fruit-pack.jpg'),
-    url('/src/images/footer/mob-orange.jpg');
+  background-image: url('/src/images/footer/mob-footer-fruits.jpg');
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/src/images/footer/mob-apple@2x.jpg'),
-      url('/src/images/footer/mob-fruit-pack@2x.jpg'),
-      url('/src/images/footer/mob-orange@2x.jpg');
+    background-image: url('/src/images/footer/mob-footer-fruits@2x.jpg');
   }
 
-  background-size: 120px, 300px, 104px;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: left 160px, bottom, top right;
-
-  &__logo {
-    margin-top: 60px;
-  }
+  background-position: bottom;
 
   &__subscribe-title {
     color: var(--primary-text-color);
@@ -32,10 +23,10 @@
     display: block;
     text-align: start;
   }
-
+  
   &__subscribe {
     @extend %subscribe-button;
-    margin: 20px 0;
+    margin-bottom: 20px;
   }
 
   &__button {
@@ -43,27 +34,43 @@
     justify-content: end;
   }
 
-  &__terms {
+  &__subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  p {
     font-size: 10px;
     color: var(--primary-text-color);
-    margin-bottom: 60px;
   }
+
+  &__navigation-list {
+    margin-left: 170px;
+    margin-bottom: 40px;
+  }
+
+  &__subscribe-form {
+    width: 100%;
+  }
+}
+
+.privacy-policy {
+    margin-bottom: 60px;
+}
+
+.subscribe-email {
+    border: 0.854167px solid var(--yellow-color);
+    border-radius: 30px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .navigation {
   display: flex;
 }
 
-.navigation-list {
-  margin-top: 64px;
-  margin-right: 112px;
-  margin-bottom: 40px;
-  margin-left: 170px;
-
-  &__item:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
 
 .policies-list {
   font-size: 10px;
@@ -71,15 +78,17 @@
   justify-content: space-between;
 }
 
+.policies {
+    margin-bottom: 40px;
+}
+
 .by-line {
   font-size: 10px;
-  margin-top: 40px;
-  @extend %display-flex;
+  text-align: center;
 }
 
 @media screen and (min-width: $tablet) {
   .footer {
-    height: 506px;
     background-image: url('/src/images/footer/tablet-footer-fruits.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -89,58 +98,34 @@
       background-image: url('/src/images/footer/tablet-footer-fruits@2x.jpg');
     }
 
-    background-size: 785px;
-    background-position: right bottom;
+    background-size: cover;
+    background-position: bottom;
 
-    &__logo {
-      margin-top: 100px;
-    }
-
-    &__subscribe-title {
-      text-align: start;
-    }
-
-    &__terms {
-      font-size: 10px;
-      color: var(--primary-text-color);
-      margin-bottom: 100px;
-    }
-
-    &__tablet-subscribe {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    &__label-borders {
-        margin-right: 12px;
-        width: 279px;
-        height: 42px;
-    }
-
-    &__subscribe {
-        height: 42px;
+    .subscribe-email {
         margin: 0;
     }
 
-    &__tablet-policies {
-        display: flex;
+    &__subscribe {
+        margin: 0;
+    }
+
+    &__subscribe-container {
+        flex-direction: row;
+        margin-bottom: 12px;
+    }
+  
+    &__subscribe-form {
+        max-width: 279px;
+        margin-right: 14px;
+        margin-bottom: 0;
     }
 
     .navigation-list {
       display: flex;
-      margin-top: 118px;
       margin-left: 114px;
-
-      &__item:not(:last-child) {
-        margin-right: 28px;
-      }
+      margin-top: 18px;
     }
-
-    .privacy-policy {
-        margin-top: 12px;
-    }
-
+    
     .footer__policies {
         display: flex;
         justify-content: space-between;
@@ -148,22 +133,15 @@
 
     .policies-list {
        display: flex;
-       justify-content: flex-start;
-
        &__item:not(:last-child) {
         margin-right: 20px;
        }
     }
-
-    .by-line {
-        margin: 0;
-      }
   }
 }
 
     @media screen and (min-width: $desktop) {
         .footer {
-          height: 395px;
           background-image: url('/src/images/footer/desktop-footer-fruits.jpg');
     
           @media (min-device-pixel-ratio: 2),
@@ -180,17 +158,5 @@
             display: flex;
             justify-content: space-between;
         }
-
-        &__terms {
-            margin: 0;
-        }
-
-        &__policies {
-            margin-top: 80px;
-        }
-        }
-
-        .subscribe-modal {
-            margin-top: 100px;
-        }
     }
+}
