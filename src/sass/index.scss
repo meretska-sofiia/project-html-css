@@ -1,12 +1,19 @@
+
+@import './utils/var';
+@import './utils/functions';
+
+
 @import './base/common';
-@import './base/var';
-@import './base/mixin';
-@import './base/placeholder';
+
+@import './utils/mixin';
+@import './utils/placeholder';
 @import './base/container';
 @import './base/section';
+@import './utils/visually-hidden';
 
 @import './components/logo';
 @import './components/mobile-menu';
+@import './components/form';
 @import './components/button';
 @import './components/section-title';
 @import './components/navigation';
