@@ -1,12 +1,13 @@
 <footer>
-  <div class="container footer">
+  <div class="container footer section">
+    <div class="footer__desktop">
     <nav class="navigation">
-      <a href="" class="logo">
-        <svg class="logo-img" width="40" height="40">
-          <use href="#"></use>
+      <a href="#" class="logo footer__logo">
+        <svg class="logo-img" width="69" height="51">
+          <use href="./images/sprite-icons.svg#logo-icon"></use>
         </svg>
       </a>
-      <ul class="navigation-list">
+      <ul class="navigation-list footer__navigation-list">
         <li class="navigation-list__item">
           <a class="navigation-list__link" href="#">Home</a>
         </li>
@@ -25,23 +26,52 @@
       </ul>
     </nav>
 
-    <form class="subscribe-modal">
-      <label>
-        <span class="footer__subscribe-title">Subscribe</span>
-        <input
-          class="subscribe-email"
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-        />
-      </label>
-      <button type="submit" class="button">Subscribe</button>
-      <p class="privacy-policy">
+    <form class="subscribe__form">
+        <label class="subscribe-label" for="subscribe-email">
+          <input
+            class="subscribe__input"
+            type="email"
+            name="email"
+            id="subscribe-email"
+            placeholder="Enter your email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <div class="label__error">
+            <svg class="error-icon">
+              <use href="./images/sprite-icons.svg#error-icon"></use>
+            </svg>
+            <span class="error-message">
+              Not a valid email address (example@email.com)
+            </span>
+          </div>
+        </label>
+
+        <button class="button subscribe--button" type="submit">Sign Up</button>
+      </form>
+    <!-- <form class="subscribe__form">
+      
+      <div class="footer__subscribe-container">
+        <label class="footer__subscribe-form">
+          <span class="footer__subscribe-title">Subscribe</span>
+          <input
+            class="subscribe-email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </label>
+      <button type="submit" class="button footer__subscribe">Subscribe</button>
+      </div>
+    </form> -->
+    </div>
+
+    <p class="privacy-policy">
         By subscribing you agree to with our
         <a class="privacy-policy__link" href="#">Privacy Policy</a>
       </p>
-    </form>
 
+    <div class="footer__policies">
     <div class="policies">
       <ul class="policies-list">
         <li class="policies-list__item">
@@ -57,6 +87,6 @@
     </div>
 
     <p class="by-line">2022 FoodSta. All right reserved.</p>
-    <p></p>
+    </div>
   </div>
 </footer>

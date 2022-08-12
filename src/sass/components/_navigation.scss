@@ -1,0 +1,21 @@
+.navigation-list {
+    &__link {
+        text-decoration: none;
+        list-style: none;
+        color: var(--secondary-text-color);
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    @media  screen and (min-width: $tablet) {
+        .navigation-list {
+            &__item:not(:last-child) {
+                margin-right: 28px;
+              }
+        }
+    }
+}
