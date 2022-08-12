@@ -1,25 +1,60 @@
 <header class="page-header">
-    <nav class="menu-nav">
-        <a href="" class="logo">
+    <div class="container page-header__wraper">
+        <div class="page-header__container">
+        <a href="" class="logo header__logo">
             <svg class="logo-img" width="40" height="40">
-                <use href="./images/sprite-icons.svg#logo-icon"></use>
-            </svg>
+                <use href="/src/images/sprite-icons.svg#logo-icon"></use>
+            </svg>    
         </a>
-        <ul class="menu">
-            <li class="menu__item"><a href="" class="menu__link ">Home</a></li>
-            <li class="menu__item"><a href="" class="menu__link ">About</a></li>
-            <li class="menu__item"><a href="" class="menu__link ">Service</a></li>
-            <li class="menu__item"><a href="" class="menu__link ">Menu</a></li>
-            <li class="menu__item"><a href="" class="menu__link ">Contact</a></li>
-        </ul>
-    </nav>
-    <button type="button" class="">Order Now</button>
+          <nav class="navigation header-navigation">
+                <ul class="navigation-list navigation-list_header">
+                    <li class="navigation-list__item header-navigation-list-item">
+                        <a class="navigation-list__link header-navigation-list-link" href="#">Home</a>
+                    </li>
+                    <li class="navigation-list__item header-navigation-list-item">
+                        <a class="navigation-list__link header-navigation-list-link" href="#">About</a>
+                    </li>
+                    <li class="navigation-list__item header-navigation-list-item">
+                        <a class="navigation-list__link header-navigation-list-link" href="#">Service</a>
+                    </li>
+                    <li class="navigation-list__item header-navigation-list-item">
+                        <a class="navigation-list__link header-navigation-list-link" href="#">Menu</a>
+                    </li>
+                    <li class="navigation-list__item header-navigation-list-item">
+                        <a class="navigation-list__link header-navigation-list-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="button page-header__button">Order Now</button>
+        </div>
+        
+        <div class="mobile-menu">
+        
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-btn-icon" width="28" height="28">
+                    <use href="/src/images/sprite-icons.svg#burger-icon"></use>
+                </svg>
+            </button>
+        
+            <nav class="sidebar">
+                
+                    <ul class="sidebar-list" data-menu>
+                        <li class="sidebar-list__item"><a href="" class="sidebar__link">Home</a></li>
+                        <li class="sidebar-list__item"><a href="" class="sidebar__link">About</a></li>
+                        <li class="sidebar-list__item"><a href="" class="sidebar__link">Service</a></li>
+                        <li class="sidebar-list__item"><a href="" class="sidebar__link">Menu</a></li>
+                        <li class="sidebar-list__item"><a href="" class="sidebar__link">Contact</a></li>
+                    </ul>
 
-    <button type="button" class="mobile-menu-btn">
-        <svg class="mobile-menu-btn-icon" width="40" height="40">
-            <use href="./images/sprite-icons.svg#burger-icon"></use>
-        </svg>
-    </button>
+            
+                
+            </nav>
+        </div>
+
+    </div>
+    
+
+
 
 
 </header>
