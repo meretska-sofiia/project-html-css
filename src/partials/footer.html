@@ -1,12 +1,13 @@
 <footer>
   <div class="container footer">
+    <div class="footer__desktop">
     <nav class="navigation">
-      <a href="" class="logo">
-        <svg class="logo-img" width="40" height="40">
-          <use href="#"></use>
+      <a href="#" class="logo footer__logo">
+        <svg class="logo-img" width="69" height="51">
+          <use href="./images/sprite-icons.svg#logo-icon"></use>
         </svg>
       </a>
-      <ul class="navigation-list">
+      <ul class="navigation-list footer__navigation-list">
         <li class="navigation-list__item">
           <a class="navigation-list__link" href="#">Home</a>
         </li>
@@ -26,22 +27,32 @@
     </nav>
 
     <form class="subscribe-modal">
-      <label>
-        <span class="footer__subscribe-title">Subscribe</span>
-        <input
-          class="subscribe-email"
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-        />
-      </label>
-      <button type="submit" class="button">Subscribe</button>
+      <span class="footer__subscribe-title">Subscribe</span>
+      <div class="footer__tablet-subscribe">
+      <div class="label-borders footer__label-borders">
+        <label>
+          <input
+            class="subscribe-email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </label>
+      </div>
+      <div class="footer__mob-button footer__tablet-button footer__button">
+      <button type="submit" class="button footer__subscribe">Subscribe</button>
+      </div>
+      </div>
+      <div class="footer__terms">
       <p class="privacy-policy">
         By subscribing you agree to with our
         <a class="privacy-policy__link" href="#">Privacy Policy</a>
       </p>
+      </div>
     </form>
+    </div>
 
+    <div class="footer__policies">
     <div class="policies">
       <ul class="policies-list">
         <li class="policies-list__item">
@@ -57,6 +68,6 @@
     </div>
 
     <p class="by-line">2022 FoodSta. All right reserved.</p>
-    <p></p>
+    </div>
   </div>
 </footer>

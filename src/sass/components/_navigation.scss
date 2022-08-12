@@ -1,0 +1,9 @@
+.navigation-list {
+    &__link {
+        text-decoration: none;
+        list-style: none;
+        color: var(--secondary-text-color);
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
