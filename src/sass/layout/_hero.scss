@@ -1,6 +1,6 @@
 .hero {
   padding-top: 60px;
-  padding-bottom: 0;
+  padding-bottom: 50px;
   @media screen and (min-width: $desktop) {
     padding-top: 14px;
 
@@ -35,51 +35,51 @@
     display: none;
   }
 
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 50px;
-  overflow: hidden;
-  
-
   @media screen and (min-width: $tablet) {
     width: var(--picture-box-width);
     height: 320px;
-    margin-left: auto;
-    margin-top: 90px;
-    padding: 14px;
+
+    border-radius: 50%;
+      border: 14px solid #FFE550;
+
+    // padding: 14px;
     right: 15px;
-        top: 0;
+    top: 100%;
+
+    transform: translateY(-75%);
+    &:hover,
+      &:focus {
+        border: 14px solid #BBF330;
+      }
   }
   @media screen and (min-width: $desktop) {
     width: 580px;
     height: 580px;
-    margin-left: 0;
-    margin-top: 0;
+  
     padding: 26px;
     right: 15px;
-        top: 0;
+    top: 0;
+    transform: translateY(0);
+
+      border: 26px solid #FFE550;
+      
+        &:hover,
+        &:focus {
+          border: 26px solid #BBF330;
+        }
   }
+  
+    .slick-list{
+      border-radius: 50%;
+    }
 }
 
 .hero__image {
-    min-width: 100%;
-    max-width: 100%;
-    
-    border-radius: 50%;
-    border: 14px solid #FFE550;
-
-    &:hover,
-    &:focus {
-        border: 14px solid #BBF330;
-    }
+    // min-width: 100%;
+    // max-width: 100%;
 
     @media screen and (min-width: $desktop) {
-        border: 26px solid #FFE550;
-        &:hover,
-        &:focus {
-                border: 26px solid #BBF330;
-            }
+      
     }
 }
 
@@ -132,6 +132,9 @@
 position: absolute;
 
 left: 0;
+top: 50%;
+
+transform: translate(-100%, -50%);
 border: none;
 padding: 0;
 width: 34px;
@@ -156,6 +159,7 @@ transition: var(--transition-time-func);
         }
 
     }
+
 }
 
 .hero__icon-left {
@@ -173,6 +177,9 @@ transition: var(--transition-time-func);
 .hero__button-right{
 position: absolute;
 right: 0;
+top: 50%;
+
+  transform: translate(100%, -50%);
 
 border: none;
 width: 34px;
