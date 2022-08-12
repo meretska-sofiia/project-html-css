@@ -34,6 +34,7 @@
     display: none;
   }
 
+
   border-radius: 50%;
   border: 14px solid #ffe550;
 
@@ -50,7 +51,6 @@
     right: 32px;
     bottom: 0;
     transform: translateY(30%);
-
   }
   @media screen and (min-width: $desktop) {
     width: 580px;
@@ -60,6 +60,7 @@
     right: 15px;
     top: 0;
     transform: translateY(0);
+
     border: 26px solid #ffe550;
 
     &:hover,
@@ -78,6 +79,7 @@
 
   @media screen and (min-width: $desktop) {
   }
+
 }
 
 .hero__title {
@@ -123,6 +125,7 @@
   }
 }
 
+
 .hero__button-left {
   position: absolute;
 
@@ -152,6 +155,7 @@
       fill: var(--accent-dark-green);
     }
   }
+
 }
 
 .hero__icon-left {
@@ -166,6 +170,7 @@
     padding: 6px 13px;
   }
 }
+
 .hero__button-right {
   position: absolute;
   right: 0;
