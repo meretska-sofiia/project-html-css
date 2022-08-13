@@ -72,10 +72,11 @@
   }
   .reviews__author-box {
     text-align: start;
+    border-right: 1px solid var(--accent-dark-green);
+    padding-right: 16px;
+
   }
-  .reviews__line {
-    border-right: 0.85px solid #7eb101;
-  }
+
 
 @media screen and (min-width: $tablet) {
   .reviews {

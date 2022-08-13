@@ -1,4 +1,4 @@
-<section class="subscribe-section">
+<section class="subscribe-section" id="subscribe">
   <div class="container subscribe-container">
     <div class="subscribe__wrap">
       <h2 class="section-title subscribe-title">
@@ -19,14 +19,14 @@
             required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           />
-          <div class="label__error">
+          <span class="label__error">
             <svg class="error-icon">
               <use href="./images/sprite-icons.svg#error-icon"></use>
             </svg>
             <span class="error-message">
               Not a valid email address (example@email.com)
             </span>
-          </div>
+          </span>
         </label>
 
         <button class="button subscribe--button" type="submit">Sign Up</button>
