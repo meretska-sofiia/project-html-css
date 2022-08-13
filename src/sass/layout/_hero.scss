@@ -37,6 +37,7 @@
 
   border-radius: 50%;
   border: 14px solid #ffe550;
+  transition: var(--transition-time-func);
 
   &:hover,
   &:focus {
@@ -134,6 +135,7 @@
   transform: translate(-100%, -50%);
   border: none;
   padding: 0;
+  cursor: pointer;
   width: 34px;
   height: 28px;
   transition: var(--transition-time-func);
@@ -178,6 +180,7 @@
   transform: translate(100%, -50%);
 
   border: none;
+  cursor: pointer;
   width: 34px;
   height: 28px;
   padding: 0;

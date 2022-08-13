@@ -13,13 +13,12 @@
     position: relative;
     margin-bottom: 20px;
     width: 100%;
-   
-    
 
     @media screen and (min-width: $tablet) {
         margin-right: 18px;
         min-width: 394px;
         max-width: 394px;
+        margin-bottom: 0;
     }
 
     @media screen and (min-width: $desktop) {
@@ -30,18 +29,19 @@
 
 .subscribe__input {
     width: 100%;
-    padding: 8px;
+    padding: 12px 11px;
     outline: transparent;
     background-color: #ffffff;
     border: 0.854167px solid var(--yellow-color);
     border-radius: 30px;
+    @include font(12px, 400, 18px);
     transition: var(--transition-time-func);
 
     &::placeholder {
         width: 100%;
         @include font(12px, 400, 18px);
         color: var(--primary-text-color);
-        padding: 12px 11px;
+       
         border: none;
     }
 
@@ -87,4 +87,10 @@
 
 .error-message {
     @include font(10px, 400, 15px)
+}
+
+.footer__button{
+    @media screen and (min-width: $desktop) {
+        
+    }
 }

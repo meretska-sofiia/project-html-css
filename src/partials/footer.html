@@ -1,92 +1,87 @@
-<footer>
-  <div class="container footer section">
+<footer class="footer section">
+  <div class="container">
     <div class="footer__desktop">
-    <nav class="navigation">
-      <a href="#" class="logo footer__logo">
-        <svg class="logo-img" width="69" height="51">
-          <use href="./images/sprite-icons.svg#logo-icon"></use>
-        </svg>
-      </a>
-      <ul class="navigation-list footer__navigation-list">
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#">Home</a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#">About</a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#">Service</a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#">Menu</a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="navigation footer__navigation">
+        <a href="#" class="logo footer__logo">
+          <svg class="logo-img" width="69" height="51">
+            <use href="./images/sprite-icons.svg#logo-icon"></use>
+          </svg>
+        </a>
+        <ul class="navigation-list footer__navigation-list">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="./index.html">Home</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#hero">About</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#offerings">Service</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#favourites">Menu</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#subscribe">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-    <form class="subscribe__form">
-        <label class="subscribe-label" for="subscribe-email">
-          <input
-            class="subscribe__input"
-            type="email"
-            name="email"
-            id="subscribe-email"
-            placeholder="Enter your email"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-          />
-          <div class="label__error">
-            <svg class="error-icon">
-              <use href="./images/sprite-icons.svg#error-icon"></use>
-            </svg>
-            <span class="error-message">
-              Not a valid email address (example@email.com)
+      <div class="form-box">
+        <form class="subscribe__form footer__form">
+          <label class="subscribe-label footer__label" for="footer-email">
+            Subscribe
+
+            <input
+              class="subscribe__input footer__input"
+              type="email"
+              name="email"
+              id="footer-email"
+              placeholder="Enter your email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
+            <span class="label__error">
+              <svg class="error-icon">
+                <use href="./images/sprite-icons.svg#error-icon"></use>
+              </svg>
+              <span class="error-message">
+                Not a valid email address (example@email.com)
+              </span>
             </span>
-          </div>
-        </label>
-
-        <button class="button subscribe--button" type="submit">Sign Up</button>
-      </form>
-    <!-- <form class="subscribe__form">
-      
-      <div class="footer__subscribe-container">
-        <label class="footer__subscribe-form">
-          <span class="footer__subscribe-title">Subscribe</span>
-          <input
-            class="subscribe-email"
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-          />
-        </label>
-      <button type="submit" class="button footer__subscribe">Subscribe</button>
+          </label>
+          <button class="button footer__button" type="submit">Subscribe</button>
+        </form>
+        <p class="privacy-policy">
+          By subscribing you agree to with our
+          <a class="privacy-policy__link footer__link" href="#"
+            >Privacy Policy</a
+          >
+        </p>
       </div>
-    </form> -->
     </div>
-
-    <p class="privacy-policy">
-        By subscribing you agree to with our
-        <a class="privacy-policy__link" href="#">Privacy Policy</a>
-      </p>
 
     <div class="footer__policies">
-    <div class="policies">
-      <ul class="policies-list">
-        <li class="policies-list__item">
-          <a class="policies-list__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="policies-list__item">
-          <a class="policies-list__link" href="#">Terms of Service</a>
-        </li>
-        <li class="policies-list__item">
-          <a class="policies-list__link" href="#">Cookies Settings</a>
-        </li>
-      </ul>
-    </div>
+      <div class="policies">
+        <ul class="policies-list">
+          <li class="policies-list__item">
+            <a class="policies-list__link footer__link" href="#"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="policies-list__item">
+            <a class="policies-list__link footer__link" href="#"
+              >Terms of Service</a
+            >
+          </li>
+          <li class="policies-list__item">
+            <a class="policies-list__link footer__link" href="#"
+              >Cookies Settings</a
+            >
+          </li>
+        </ul>
+      </div>
 
-    <p class="by-line">2022 FoodSta. All right reserved.</p>
+      <p class="by-line">2022 FoodSta. All right reserved.</p>
     </div>
   </div>
 </footer>
