@@ -10,7 +10,7 @@
             background-image: url('../images/offerings/mobile/rectangle@2x.png');
         }
     
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         padding-top: 147px;
         padding-bottom: 110px;
         background-image: url('../images/offerings/tablet/rectangle.png');
@@ -22,7 +22,7 @@
         }
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         padding-top: 217px;
         padding-bottom: 76px;
         background-image: url('../images/offerings/desktop/rectangle.png');
@@ -36,7 +36,7 @@
 }
 
 .container-offerings {
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -49,14 +49,14 @@
     margin-right: auto;
     margin-bottom: 60px;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 0;
     }
         
 }
 
 .offerings__title {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         max-width: 526px;
     }  
 }
@@ -69,7 +69,7 @@
 
     color: var(--primary-text-color);
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         max-width: 500px;
         margin-bottom: 40px;
 
@@ -77,26 +77,26 @@
         line-height: 1.19;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         font-size: 15px;
         line-height: 1.5;
     }
 }
 
 .offerings__description--size {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.14;
         max-width: 252px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         line-height: 1.4;
     }
 }
 
 .offerings__list {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
     }
