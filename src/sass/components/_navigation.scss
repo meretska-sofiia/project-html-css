@@ -1,7 +1,7 @@
 .navigation {
     display: flex;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         align-items: center;
     }
 
@@ -23,7 +23,7 @@
 .navigation-list__item:not(:last-child) {
     margin-bottom: 20px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         margin-right: 28px;
         margin-bottom: 0;
     }

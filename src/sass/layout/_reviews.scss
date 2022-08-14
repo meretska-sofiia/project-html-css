@@ -78,7 +78,7 @@
   }
 
 
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: 768px) {
   .reviews {
     padding-top: 58.62px;
     padding-bottom: 115px;
@@ -121,7 +121,7 @@
   }
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: 1280px) {
   .reviews {
     padding-top: 100px;
     padding-bottom: 213px;
