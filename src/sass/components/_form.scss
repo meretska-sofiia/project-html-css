@@ -51,6 +51,7 @@
         +.label__error {
             visibility: visible;
             opacity: 1;
+                transform: rotateX(0) translateY(0%);
         }
     }
 
@@ -73,6 +74,7 @@
     border-radius: 30px;
     visibility: hidden;
     opacity: 0;
+    transform: rotateX(90deg) translateY(-50%);
     transition: var(--transition-time-func);
 }
 
