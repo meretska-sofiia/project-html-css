@@ -1,0 +1,12 @@
+@mixin font($fs: 14px, $fw: 600, $lh: 18px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: decimal-round(calc($lh / $fs), 2);
+}
+
+@mixin hover-focus {
+    &:hover,
+    &:focus {
+        @content;
+    }
+  }

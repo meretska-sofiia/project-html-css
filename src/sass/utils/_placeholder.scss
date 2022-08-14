@@ -1,0 +1,21 @@
+%display-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%primary-button {
+    background-color: var(--accent-green-color);
+    border: none;
+    padding: 6px 18px;
+}
+
+%secondary-button {
+    background-color: var(--header-background-color);
+    border: 2px solid var(--accent-dark-green);
+}
+
+%subscribe-button {
+    background-color: #FFFFFF;
+    border: 0.854167px solid var(--accent-dark-green);
+}

@@ -1,0 +1,155 @@
+
+  .reviews__item:not(:last-child) {
+    @media screen and (max-width:767px) {
+      margin-bottom: 24px;
+    }
+    
+  }
+
+  .reviews {
+    padding-top: 60px;
+    padding-bottom: 62px;
+
+    // background-size: 100% auto;
+
+    // max-width: 100%;
+    // height: 100%;
+
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    background-image: url('../images/reviews-images/bckg-imagemobile.png');
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/reviews-images/bckg-imagemobile@2x.png');
+    }
+    
+  }
+  .reviews__item{
+    background: #fefefe;
+    border-radius: 0px 30px 30px 30px;
+    padding: 8px;
+  }
+
+  .reviews__title {
+    margin-bottom: 20px;
+    line-height: 1.16;
+  }
+  .reviews__text {
+    display: inline-block;
+    height: 100%;
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.14;
+    color: #2c2c2c;
+  }
+  .reviews__group-star {
+    text-align: start;
+    margin-bottom: 28px;
+  }
+
+  .reviews__comment {
+    margin-bottom: 46.35px;
+
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+
+    color: #2c2c2c;
+  }
+  .reviews__author {
+    display: flex;
+    text-align: center;
+    gap: 16px;
+  }
+  .reviews__author-box {
+    text-align: start;
+    border-right: 1px solid var(--accent-dark-green);
+    padding-right: 16px;
+
+  }
+
+     .reviews__star {
+       fill: #ffe550;
+     }
+
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 58.62px;
+    padding-bottom: 115px;
+
+    background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+
+
+    background-image: url('../images/reviews-images/bckg-image-tablet.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/reviews-images/bckg-image-tablet@2x.png');
+    }
+  }
+
+  .reviews__group-comment {
+    display: flex;
+    gap: 32px;
+  }
+  .reviews__item {
+  
+          background: #fefefe;
+          border-radius: 0px 30px 30px 30px;
+          padding: 12px;
+
+
+  }
+  .reviews__text {
+    line-height: 1.18;
+    margin-bottom: 32px;
+  }
+ 
+  .reviews__comment {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 213px;
+
+    background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+
+    background-image: url('../images/reviews-images/bckg-image-desktop.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/reviews-images/bckg-image-desktop@2x.png');
+    }
+  }
+  .reviews__group-comment {
+    gap: 139px;
+  }
+  .reviews__item {
+    padding: 14px;
+  }
+  .reviews__title {
+    margin-bottom: 48px;
+    line-height: 1.16;
+  }
+  .reviews__text {
+    line-height: 1.18;
+  }
+}

@@ -1,0 +1,30 @@
+.navigation {
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+    }
+
+}
+
+.navigation-list__link {
+    text-decoration: none;
+    list-style: none;
+    color: var(--secondary-text-color);
+    @include font(14px, 400, 16px);
+    transition: var(--transition-time-func);
+    &:hover,
+    &:focus{
+        outline: transparent;
+        color: var(--accent-green-color);
+    }
+}
+
+.navigation-list__item:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 28px;
+        margin-bottom: 0;
+    }
+}
