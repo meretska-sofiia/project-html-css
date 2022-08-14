@@ -77,6 +77,10 @@
 
   }
 
+     .reviews__star {
+       fill: #ffe550;
+     }
+
 
 @media screen and (min-width: 768px) {
   .reviews {
@@ -112,9 +116,7 @@
     line-height: 1.18;
     margin-bottom: 32px;
   }
-  .reviews__star {
-    fill: #ffe550;
-  }
+ 
   .reviews__comment {
     font-size: 18px;
     line-height: 1.17;
